@@ -39,7 +39,7 @@ const TABS = [
   },
 ]
 
-export function DevExSection() {
+export function InfoSection() {
   const [active, setActive] = useState(0)
   const [visible, setVisible] = useState(true)
 
@@ -68,7 +68,7 @@ export function DevExSection() {
   const tab = TABS[active] ?? TABS[0]
 
   return (
-    <section id="devex" className="py-32 px-6 md:px-12 lg:px-20 border-t border-black/[0.06] bg-[#03045E]">
+    <section id="malumot" className="py-32 px-6 md:px-12 lg:px-20 border-t border-black/[0.06] bg-[#03045E]">
       <div className="max-w-6xl mx-auto">
         <div className="mb-16">
           <span className="inline-flex items-center px-3 py-1 rounded-full text-[11px] tracking-widest font-sans text-sky-300 bg-white/10">

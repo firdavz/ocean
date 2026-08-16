@@ -6,7 +6,7 @@ const NAV_LINKS = [
   { label: "Suzish havzasi", href: "#basseyn" },
   { label: "Sauna",        href: "#sauna" },
   { label: "Narxlar",      href: "#narxlar" },
-  { label: "Ma'lumotlar",  href: "#devex" },
+  { label: "Ma'lumotlar",  href: "#malumot" },
   { label: "Nega biz",     href: "#imkoniyatlar" },
 ]
 

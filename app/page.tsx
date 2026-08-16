@@ -2,11 +2,11 @@
 
 import React, { useRef, useEffect, useState, useCallback } from "react"
 import { Ruler, Users, Calendar, Clock } from "lucide-react"
-import { IntroAnimation, INTRO_DURATION_MS, HERO_REVEAL_MS } from "@/components/intro-animation"
+import { IntroAnimation, HERO_REVEAL_MS } from "@/components/intro-animation"
 import { RevealText } from "@/components/reveal-text"
-import { StackingAgentCards } from "@/components/stacking-agent-cards"
+import { StackingPriceCards } from "@/components/stacking-price-cards"
 import { MobileNav } from "@/components/mobile-nav"
-import { DevExSection } from "@/components/devex-section"
+import { InfoSection } from "@/components/info-section"
 
 // ─── Intersection Observer hook ──────────────────────────────────────────────
 function useInView(threshold = 0.15) {
@@ -52,7 +52,7 @@ function Tag({ children }: { children: React.ReactNode }) {
 }
 
 // ─── Main page ────────────────────────────────────────────────────────────────
-export default function AgenticPage() {
+export default function OceanLandingPage() {
   const [email, setEmail] = useState("")
   const [submitted, setSubmitted] = useState(false)
   const [heroReady, setHeroReady] = useState(false)
@@ -71,6 +71,7 @@ export default function AgenticPage() {
   const isWinter = month === 10 || month === 11 || month === 12 || month <= 3
   const heroQuote = isWinter ? "Qishning eng issiq manzili" : "Yozning eng salqin manzili"
   const contactHeading = isWinter ? "Qishni o'tkazib yubormang !" : "Yozni o'tkazib yubormang !"
+  const heroVideoSrc = isWinter ? "/sauna.mp4" : "/hero.mp4"
 
   const handleMouse = (e: React.MouseEvent<HTMLDivElement>) => {
     const el = e.currentTarget
@@ -97,7 +98,7 @@ export default function AgenticPage() {
           muted
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
-          src="/hero.mp4"
+          src={heroVideoSrc}
           style={{
             opacity: videoReady ? 1 : 0,
             transform: videoReady ? "scale(1)" : "scale(1.1)",
@@ -274,7 +275,7 @@ export default function AgenticPage() {
         </div>
       </section>
 
-      {/* ── BUILD YOUR AGENTS (4 cards) ───────────────────────────────────── */}
+      {/* ── PRICING (4 cards) ───────────────────────────────────────────────── */}
       <section id="narxlar" className="py-32 px-6 md:px-12 lg:px-20 border-t border-black/[0.06] bg-[#03045E]">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-16">
@@ -294,12 +295,12 @@ export default function AgenticPage() {
             </p>
           </div>
 
-          <StackingAgentCards />
+          <StackingPriceCards />
         </div>
       </section>
 
-      {/* ── DEVELOPER EXPERIENCE ──────────────────────────────────────────── */}
-      <DevExSection />
+      {/* ── FACILITY INFO ────────────────────────────────────────────────── */}
+      <InfoSection />
 
       {/* ── HOW IT WORKS ──────────────────────────────────────────────────── */}
       <section id="imkoniyatlar" className="py-32 px-6 md:px-12 lg:px-20 border-t border-black/[0.06] overflow-hidden bg-[#03045E]">

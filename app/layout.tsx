@@ -12,21 +12,21 @@ const _ibmPlexSans = IBM_Plex_Sans({ weight: ["300", "400", "500", "600"], subse
 const _manrope = Manrope({ weight: ["700", "800"], subsets: ["latin"], variable: "--font-manrope" });
 
 export const metadata: Metadata = {
-  title: 'Agentic — Autonomous AI Agents at Scale',
-  description: 'Deploy autonomous AI agents that think, act, and execute across any workflow. Connect 200+ integrations, run agents in parallel, and ship faster with the Agentic platform.',
-  keywords: ['AI agents', 'autonomous agents', 'LLM orchestration', 'AI automation', 'multi-agent platform'],
-  authors: [{ name: 'Agentic' }],
+  title: 'Ocean — Suzish havzasi va Sauna | Chortoq, Namangan',
+  description: "Ocean — Chortoq, Namangan'dagi suzish havzasi va sauna majmuasi. 500 m² suzish havzasi, Harvia jihozlari bilan jihozlangan sauna xonalari, milliy taomlar va jonli musiqa.",
+  keywords: ['suzish havzasi', 'basseyn', 'sauna', 'Namangan', 'Chortoq', 'Ocean basseyn'],
+  authors: [{ name: 'Ocean' }],
   openGraph: {
-    title: 'Agentic — Autonomous AI Agents at Scale',
-    description: 'Deploy autonomous AI agents that think, act, and execute across any workflow.',
+    title: 'Ocean — Suzish havzasi va Sauna',
+    description: "Chortoq, Namangan'dagi suzish havzasi va sauna majmuasi.",
     type: 'website',
-    url: 'https://agentic.ai',
-    siteName: 'Agentic',
+    url: 'https://oceanbasseyn.uz',
+    siteName: 'Ocean',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Agentic — Autonomous AI Agents at Scale',
-    description: 'Deploy autonomous AI agents that think, act, and execute across any workflow.',
+    title: 'Ocean — Suzish havzasi va Sauna',
+    description: "Chortoq, Namangan'dagi suzish havzasi va sauna majmuasi.",
   },
   icons: {
     icon: [

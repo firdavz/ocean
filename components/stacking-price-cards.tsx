@@ -129,7 +129,7 @@ function OceanOrb({ variant, delay = 0, gold = false }: { variant: "adult" | "ki
   )
 }
 
-export function StackingAgentCards() {
+export function StackingPriceCards() {
   const cardRefs = useRef<(HTMLDivElement | null)[]>([])
   // depth[i] = 0..N how many cards are currently stacked on top of card i
   const [depth, setDepth] = useState<number[]>(PLANS.map(() => 0))
