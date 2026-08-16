@@ -90,7 +90,7 @@ export default function OceanLandingPage() {
       <MobileNav />
 
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
-      <section className="relative min-h-[85vh] flex items-end bg-[#03045E] overflow-hidden">
+      <section className="relative min-h-[85vh] flex flex-col justify-end items-start md:flex-row md:justify-start md:items-end bg-[#03045E] overflow-hidden">
         {/* Full-bleed background video */}
         <video
           autoPlay
@@ -111,7 +111,7 @@ export default function OceanLandingPage() {
 
         {/* Kicker — bottom-right corner */}
         <div
-          className="absolute z-10 bottom-8 right-8 md:bottom-12 md:right-16 flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/10 backdrop-blur-md"
+          className="z-10 mx-8 mb-4 md:mb-0 md:mx-0 md:absolute md:bottom-12 md:right-16 flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/10 backdrop-blur-md self-start"
           style={{
             opacity: heroReady ? 1 : 0,
             filter: heroReady ? "blur(0px)" : "blur(24px)",
@@ -218,7 +218,7 @@ export default function OceanLandingPage() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-6 items-center">
 
             {/* Left — editorial text, clean and spacious, no stats here */}
-            <div className="md:col-span-5 md:pr-4 md:order-1 order-2">
+            <div className="md:col-span-5 md:pr-4">
               <div className="flex items-center gap-3">
                 <span className="w-8 h-px bg-sky-400" />
                 <span className="text-xs tracking-[0.3em] uppercase text-sky-300">Sauna</span>
@@ -233,7 +233,7 @@ export default function OceanLandingPage() {
             </div>
 
             {/* Right — cinematic video, same frame language as the pool section */}
-            <div className="md:col-span-7 md:-mr-6 lg:-mr-16 xl:-mr-24 md:order-2 order-1">
+            <div className="md:col-span-7 md:-mr-6 lg:-mr-16 xl:-mr-24">
               <div
                 className="relative w-full h-[420px] md:h-[560px] lg:h-[620px] overflow-hidden shadow-2xl"
                 style={{ borderRadius: "1rem 3rem 1rem 1rem" }}
