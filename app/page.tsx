@@ -111,7 +111,7 @@ export default function OceanLandingPage() {
 
         {/* Kicker — bottom-right corner */}
         <div
-          className="z-10 mx-8 mb-4 md:mb-0 md:mx-0 md:absolute md:bottom-12 md:right-16 flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/10 backdrop-blur-md self-start"
+          className="z-10 ml-6 mb-3 md:mb-0 md:ml-0 md:absolute md:bottom-12 md:right-16 flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full border border-white/20 bg-white/10 backdrop-blur-md self-start"
           style={{
             opacity: heroReady ? 1 : 0,
             filter: heroReady ? "blur(0px)" : "blur(24px)",
@@ -123,13 +123,13 @@ export default function OceanLandingPage() {
             <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z" />
             <circle cx="12" cy="10" r="3" />
           </svg>
-          <span className="text-white text-sm tracking-widest uppercase">CHORTOQ · NAMANGAN</span>
+          <span className="text-white text-xs md:text-sm tracking-widest uppercase">CHORTOQ · NAMANGAN</span>
         </div>
 
-        <div className="relative z-10 w-full pb-10 pl-8 md:pl-16">
+        <div className="relative z-10 w-full pb-12 md:pb-10 pl-6 md:pl-16">
           <div className="max-w-2xl">
             <h1
-              className="text-4xl md:text-5xl font-light text-white leading-[1.1] tracking-tight drop-shadow-lg"
+              className="text-3xl md:text-5xl font-light text-white leading-[1.1] tracking-tight drop-shadow-lg text-left"
               style={{
                 opacity: heroReady ? 1 : 0,
                 filter: heroReady ? "blur(0px)" : "blur(24px)",
